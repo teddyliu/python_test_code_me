@@ -1,0 +1,13 @@
+status: 200
+content-length: 289
+content-location: http://ip.taobao.com/service/getIpInfo.php?ip=202.102.0.20
+x-powered-by: PHP/5.3.8
+vary: Accept-Encoding
+server: Tengine
+connection: close
+-content-encoding: gzip
+date: Wed, 20 Mar 2013 10:35:54 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+{"code":0,"data":{"country":"\u4e2d\u56fd","country_id":"CN","area":"\u534e\u4e1c","area_id":"300000","region":"\u6c5f\u82cf\u7701","region_id":"320000","city":"\u5357\u4eac\u5e02","city_id":"320100","county":"","county_id":"-1","isp":"\u7535\u4fe1","isp_id":"100017","ip":"202.102.0.20"}}
