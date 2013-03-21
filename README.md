@@ -11,5 +11,5 @@ python初学者项目（起步级代码）
 ＋＝＝＝＝＝＝＝
 
    tip  ip信息查询脚本，ip库来自taobao。
-     tip [ip addr]
+       tip [ip addr]
 
