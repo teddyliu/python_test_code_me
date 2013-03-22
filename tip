@@ -7,12 +7,12 @@ import sys
 import socket
 
 try:
-    scrpit, _url =  sys.argv
+    scrpit, _addr =  sys.argv
 except ValueError:
     print "...\n......\n\n没有获取到IP地址  退出程序!!!\n........Done!"
     sys.exit()
 
-net_addr =  socket.getaddrinfo(_url, None)
+net_addr =  socket.getaddrinfo(_addr, None)
 
 url =  "http://ip.taobao.com/service/getIpInfo.php?ip=" + net_addr[0][4][0]
 Hc =  httplib2.Http(".cache")
