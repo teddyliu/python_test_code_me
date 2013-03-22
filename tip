@@ -4,16 +4,17 @@
 
 import httplib2
 import sys
-
+import socket
 
 try:
     scrpit, _url =  sys.argv
 except ValueError:
     print "...\n......\n\n没有获取到IP地址  退出程序!!!\n........Done!"
     sys.exit()
-    
 
-url =  "http://ip.taobao.com/service/getIpInfo.php?ip=" + _url
+net_addr =  socket.getaddrinfo(_url, None)
+
+url =  "http://ip.taobao.com/service/getIpInfo.php?ip=" + net_addr[0][4][0]
 Hc =  httplib2.Http(".cache")
 resp, content =  Hc.request(url, "GET")
 
