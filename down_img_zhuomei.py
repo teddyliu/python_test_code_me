@@ -55,7 +55,7 @@ if __name__ == '__main__':
     thread_a_pat =  r'href="(thread-\d{2,7}-\d+-\d+.html)"'
     thread_b_pat =  r'href="(forum.php?.*tid=\d+)"'
 
-    import types
+    #import types  调试
 
     def Down_img(img):
         img_name =  re.split(r'/', img)[-1]
