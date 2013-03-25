@@ -42,6 +42,7 @@ def loop_page():
     except RequestError:
         print '没有抓取到数据!'
         sys.exit()
+        
     loop_url_list =  []
 
     for i in [str(x) for x in range(1,count_page_num + 1)]:
